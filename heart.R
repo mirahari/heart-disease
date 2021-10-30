@@ -9,7 +9,6 @@
 
 # ------------------------------ SET  UP --------------------------------- #
 
-library(kableExtra)
 library(tidyverse)
 library(gridExtra) 
 library(cowplot)
