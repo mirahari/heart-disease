@@ -51,16 +51,202 @@ The bar chart above illustrates the percentage of heart disease occurrence in di
 
 Due to men’s higher absolute risk relative to women, cardiovascular disease has been seen as a male disease for a long time. There are a variety of reasons that can explain the gender difference in heart disease. For instance, psychosocial and behavioral factors such as excessive alcohol consumption and smoking, are in favor of women[^5].
 
+<br>
 
 ![BOX : GENDER x AGE x TARGET](/img/box.png)
+
 As shown in the boxplot, there is an age gap between genders in terms of heart disease diagnosis. The interquartile range for men with heart disease is much larger than their female counterparts. The boxplot for female with heart disease is also heavily skewed to the left in comparison with male’s, indicating that female get heart disease later in
 life. A study in 2010 has revealed that cardiovascular disease develops 7 to 10 years later in women than in men. In spite of that, it remains the leading cause of mortality in women[^6].
 
 Heart attack can be more fatal in women. Due to their smaller body size and blood vessels, blockages of the same size can be more serious. The narrower vessel channel also makes surgery and angioplasty procedures more complicated[^1]. Hence, the risk should not be underestimated due to the false sense of security that females are protected against cardiovascular disease[^6].
 
+<br>
+
 ### Question 2
 
 #### What is the relationship between heart rate and age?
+
+![SCATTER : HEART RATE x AGE](/img/scatter1.png)
+
+To identify the relationship, a scatterplot was obtained by plotting the age of respondents against their maximum heart
+rate achieved. From the plot above, it shows that age and maximum heart rate are inversely related, in which the older
+the age, the lower the maximum heart rate.
+Many studies have shown that the maximum heart rate declines with age.10 The major reason behind the age-related
+decrease is due to a drop in the intrinsic heart rate. This implies that the heart’s own pacemaker (a cluster of cells
+responsible for initiating each heartbeat) has lost its functional efficiency.
+
+<br>
+
+![SCATTER : HEART RATE x AGE x TARGET](/img/scatter2.png)
+
+The graph prior to this shows that the maximum heart rate decreases steadily with age. However, after splitting the
+graph based on the diagnosis of heart disease, the previous statement no longer holds true for those who suffered from
+heart disease.
+The line for those with heart disease has a more irregular pattern. It also shows that those who suffered from heart
+disease have a lower maximum heart rate at an earlier age, reflecting poor heart functionality. Hence, an abnormally
+low maximum heart rate may be used as a risk marker for younger people to detect heart disease.
+
+<br>
+
+### Question 3
+
+#### Which type of chest pain is the most prevalent in individuals with heart disease?
+
+The type of chest pain contains 4 different levels:12 13
+1. Typical angina - caused by physical exertion or emotional stress
+2. Atypical angina - does not cause any typical chest pain but will radiate to other parts of the body
+3. Non-anginal pain - resembles heart discomfort in people who do not have heart disease
+4. Asymptomatic - showing no symptoms or minimal symptoms
+Angina is described as a kind of discomfort caused when the heart doesn’t get enough oxygen-rich blood.
+
+![POINT : CHEST PAIN x TARGET](/img/point.png)
+
+From the plot, it is evident that the ‘Asymptomatic’ type is the most prevalent among the respondents with heart disease.
+This means that most of them actually do not show any symptoms of heart disease. A person who appears to be healthy
+may be experiencing painless damage to the heart. The first sign of silent heart disease can be fatal: a heart attack or
+even death.1
+
+![BAR : CHEST PAIN x ANGINA x TARGET](/img/bar2.png)
+
+From the bar chart above, exercise-induced angina is found to have a higher occurrence in respondents suffering from
+heart disease, specifically with those who are otherwise asymptomatic. This means that even if they do not suffer from
+any chest pain during day-to-day activities, they might still experience some discomfort during physical exercise.
+In fact, it was proven that exercise-induced angina is a common complaint among cardiac patients, which can be
+triggered further when exposed to a cold environment.14 Thus, this symptom can be served as an indicator of potential
+heart disease.
+
+<br>
+
+### Question 4
+
+#### Can thallium stress tests detect heart disease?
+
+A thallium stress test is a nuclear imaging test that evaluates blood flows in the heart. The heart is photographed while
+doing exercise and at rest.15 It can provide diagnostic information about patients with known or suspected cardiovascular disease.16
+Normal Fixed Reversible Total
+Absent 119 6 25 150
+Present 33 8 79 120
+Total 152 14 104 270
+Based on the dataset, the test results are categorized as normal, fixed defect and reversible defect. Fixed defects refer
+to abnormalities present on scan both during cardiac stress and at rest. Reversible defects are those that are present on
+the post-stress scan but show improvement in the resting scan.16
+
+![PIE : THAL x TARGET](/img/pie.png)
+
+Based on the pie chart, almost 80% of respondents without heart disease have normal test results. On the other hand,
+66% of respondents with heart disease have reversible defects. Thus, it demonstrates that thallium stress test can be
+quite effective in detecting heart disease and the results may contribute to the prediction of diagnosis.
+Nonetheless, normal results still account for more than a quarter of the respondents with heart disease. Hence, the risk
+should not be underestimated even with normal stress test results.
+
+<br>
+
+### Question 5
+
+#### How does the ST segment differ between individuals with and without heart disease?
+
+Electrocardiogram (ECG) measures electrical activities of the heart. The ST segment reflects the period of zero potential between ventricular depolarization and repolarization. The ST segment can be displaced upwards (elevation) or
+downwards (depression).17
+
+![DENSITY : ST DEPRESSION x TARGET](/img/density.png)
+
+ST depression refers to an ECG result in which the trace in the ST segment is unusually low.18 The acceptable level of
+ST segment depression is less than 0.5mm, while reading that is more than 0.5mm is considered pathological.19 The
+graph above supports that higher ST depression is related to the presence of heart disease. It can be seen that the dashed
+line that represents the median is higher for patients with heart disease than non-diseased patients.
+
+![LINE : SLOPE x TARGET](/img/line.png)
+
+Besides the reading of ST depression, the characteristic of ST segment is also important. As shown above, respondents
+who are not diagnosed with heart disease have the highest rate of showcasing an upsloping ST segment during exercise,
+followed by a flat one. On the flip side, those with heart disease are more likely to exhibit a flat ST segment. Previous
+studies have proved that the normal ST segment during exercise has an upward curve. Flat or downsloping ST segments
+might indicate possible abnormalities.20
+
+<br>
+
+## Predictive Modeling
+
+A decision tree is a predictive model which can be used to represent both classifiers and regression models. In this study,
+classification trees are used to classify the diagnosis of heart disease into a predefined set of classes (absent/present)
+based on their attribute values (e.g., age, gender, chest pain type, etc).21
+
+![UNPRUNE TREE](/img/unprune.png)
+
+By fitting the classification tree using all of the predictors, the tree turned out to be quite complicated (i.e., has too many
+nodes), reducing the usefulness of its straightforward graphical representation. Branches that are not contributing to
+the generalization accuracy can be trimmed to simplify the interpretation of the hierarchical structure and improve its
+comprehensibility. This process is called pruning.21
+
+The summary shows that the tree has 13 terminal nodes and a misclassification error rate of 11.85%. 8 out of
+13 predictors have been used in the tree construction.
+
+By evaluating the tree model using the test set, the unpruned tree has an accuracy rate of 74.81%.
+
+<br>
+
+#### Pruning
+
+Cross-validation and cost complexity pruning is utilized to determine the optimal level of tree complexity. The misclassification error rate is used as the cost function to guide the pruning process.21
+
+![CROSS VALIDATION](/img/cv.png)
+
+The cross-validation of terminal nodes amount (size) and the corresponding error rate (dev) shows that a tree with 7
+terminal nodes will result in the lowest misclassification error rate.
+
+![PRUNED TREE](/img/prune.png)
+
+The above shows that thal (thallium stress test) is the root node, which is the best attribute to predict outcomes. It then
+splits into the decision nodes according to the rules. If it obeys the rule, it will go down to the left child node and to the
+right if it doesn’t (e.g. if the test result is normal, it will go to the node with heart rate < 111.5; if the test result is not
+normal, it will go to the node with ST depression < 1.5). This will carry on until it reaches one of the seven terminal
+nodes.
+
+The summary shows that the tree now has 7 terminal nodes and a misclassification error rate of 13.33%. Only 6 of the
+predictors have been used to construct the pruned tree.
+
+The pruned tree has a prediction accuracy rate of 76.29%, which is a slight improvement from the unpruned tree.
+
+<br>
+
+#### Comparison of Pruned and Unpruned Classification Trees
+
+Unpruned Pruned
+No. of Terminal Nodes 13 7
+Predictors Used 8 6
+Accuracy Rate 74.81% 76.29%
+Misclassification Rate 11.85% 13.33%
+
+Comparing both trees, the pruned tree has only 7 terminal nodes, which makes the classification process more simplified
+than the unpruned tree with 13 terminal nodes. The pruned tree only used 6 out of the 13 predictors. In contrast, 8
+predictors were fit into the unpruned tree.
+The diagnostic accuracy has increased around 1.5% after pruning. However, the misclassification rate had also gone
+up at the same rate. Pruning a tree will increase the misclassification error rate of training data, but should decrease
+the error rate on independent test data. This is because in high uncertainty domains, all but the first two or three levels
+of the tree were being removed.22
+Users should choose the appropriate tree based on their criteria.
+
+<br>
+
+## Conclusion
+
+In conclusion, men have higher odds of developing heart disease than women. Nevertheless, women should not take
+this lightly as heart disease remains the biggest cause of death among women. We also found out that younger people
+with heart disease have abnormally low maximum heart rates, whereas the heart rate of those without heart disease
+decreases steadily with age.
+Despite technological advancements and increased health consciousness, heart diseases still claim millions of lives
+every year. Excruciatingly, this catastrophic event can occur without any warning. The analysis shows that most
+patients with heart disease do not suffer from chest pain. However, exercise-induced angina is found to be more
+common in cardiac patients. A thallium stress test seems to be effective in detecting heart disease. In spite of that, a
+normal test result does not equate to risk-free as it still accounts for more than a quarter of those suffering from heart
+disease.
+There are also other means of measure that can be employed to detect heart disease. For example, the ST segment in
+electrocardiogram (ECG) can be used to monitor the risk. A high number of ST depression or a flat ST segment during
+exercise might indicate the presence of heart disease. The susceptibility to heart disease can also be estimated with the
+help of predictive modeling. In this study, decision tree was used to predict the diagnosis of heart disease.
+Many factors play a part in our heart health, but not all of them can be altered. Preventive measures and early diagnosis
+need to be emphasized, especially towards high-risk subjects. Genetics can’t be altered, but diets and everyday habits
+sure do. Regardless of one’s genetic profile, lifestyle factors may reduce the risk of heart disease.
 
 ## References
 
