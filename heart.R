@@ -132,16 +132,6 @@ ggplot(heart, aes(x=exang, fill=target)) +
 
 # ---------------------------------- Q4 ---------------------------------- #
 
-# --- TABLE : THAL x TARGET
-
-tb <- addmargins(table(target,thal))
-rownames(tb) <- c("Absent", "Present", "Total")
-
-kable(tb, linesep="\\addlinespace", booktabs = T, 
-      col.names=c("Normal", "Fixed", "Reversible", "Total")) %>%
-  kable_styling(font_size = 10, full_width = F, position = "left",
-                latex_options = "striped") 
-
 # --- PIE : THAL x TARGET
 
 thal1 <- heart %>% group_by(thal) %>% 
