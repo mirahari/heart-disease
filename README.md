@@ -1,5 +1,5 @@
 # Heart Disease Dataset 
-### UCI Machine Learning Repository
+### Exploratory Data Analysis and Predictive Modelling
 
 <br>
 According to the World Health Organization, heart disease has been the greatest killer among diseases worldwide over the past 20 years. Every year, heart diseases have caused an estimated 17.9 million mortalities globally. It now accounts for 16% of total mortalities from all causes.
