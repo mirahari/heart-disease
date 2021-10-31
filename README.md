@@ -8,7 +8,7 @@
   - [Gender](#which-gender-has-a-higher-risk-of-heart-disease)
   - [Heart Rate](#what-is-the-relationship-between-heart-rate-and-age)
   - [Chest Pain](#which-type-of-chest-pain-is-the-most-prevalent-in-individuals-with-heart-disease)
-  - [Thallium Stress Tests](#can-thallium-stress-tests-detect-heart-disease)
+  - [Thallium Stress Test](#can-thallium-stress-tests-detect-heart-disease)
   - [ST segment](#how-does-the-st-segment-differ-between-individuals-with-and-without-heart-disease)
 * [Predictive Modeling](#predictive-modeling)
   - [Classification Tree](#classification-tree)
@@ -192,6 +192,8 @@ A decision tree is a predictive model which can be used to represent both classi
 <br>
 
 ### Classification Tree
+
+<br>
 
 ![UNPRUNE TREE](/img/unprune.png)
 
