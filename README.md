@@ -17,13 +17,13 @@ Risk factors of heart disease fall into three main categories[^4]:
 
 # Data Dictionary
 
-The dataset used in this study is the [Statlog (Heart) dataset from UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Statlog+%28Heart%29). The following table describes the 14 variables from the dataset.
+The dataset used in this study is the [Statlog (Heart) dataset from UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Statlog+%28Heart%29). The following table describes the 14 variables in the dataset.
 
 | No. | Names | Description | Measurement |
 | :-: | :--------- | :--------- | :--------- |
 | 1 | age | Age | in years |
 | 2 | sex | Sex | 0 = female, 1 = male |
-| 3 | cp | Chest pain type | 1 = typical, 2 = atypical, 3 = non-anginal, 4 = asymptomatic |
+| 3 | cp | Chest pain type | 1 = typical angina, 2 = atypical angina, 3 = non-anginal pain, 4 = asymptomatic |
 | 4 | restbp | Resting blood pressure | in mm Hg |
 | 5 | chol | Serum cholesterol | in mg/dl |
 | 6 | fbs | Fasting blood sugar > 120 mg/dl | 0 = false, 1 = true |
@@ -35,6 +35,8 @@ The dataset used in this study is the [Statlog (Heart) dataset from UCI Machine 
 | 12 | fluor | Number of major vessels colored by fluoroscopy | 0 - 3 |
 | 13 | thal | Thallium stress test results | 3 = normal, 6 = fixed, 7 = reversible |
 | 14 | target | Diagnosis of heart disease | 1 = absent, 2 = present |
+
+<br>
 
 The variables include:
 - Risk factors - Age, sex, blood pressure, cholesterol, blood sugar
