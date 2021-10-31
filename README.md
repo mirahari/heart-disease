@@ -11,21 +11,21 @@ Heart disease, also known as cardiovascular disease, is a disorder characterized
 Hence, it is essential to be knowledgeable about the symptoms and factors of heart disease as it is a major public health concern. By analyzing the healthcare data, we can gain profound insights into the disease. We can also use predictive modeling to predict the diagnosis, which may assist in the early detection and prevention of heart disease.
 
 Risk factors of heart disease fall into three main categories[^4]:
-1. Unchangeable risk factors - age, gender, heredity;
-2. Modifiable risk factors - smoking, blood cholesterol, blood pressure, obesity, diabetes; and
-3. Contributing risk factors - stress, alcohol, diet and nutrition.
+1. Unchangeable - Age, gender, heredity
+2. Modifiable - Smoking, blood cholesterol, blood pressure, obesity, diabetes
+3. Contributing - Stress, alcohol, diet and nutrition
 
 <br>
 
 ## Data Dictionary
 
-The dataset used in this report is the [Statlog (Heart) dataset from UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Statlog+%28Heart%29). The following table describes the 14 variables from the dataset.
+The dataset used in this study is the [Statlog (Heart) dataset from UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Statlog+%28Heart%29). The following table describes the 14 variables from the dataset.
 
 | No. | Names | Description | Measurement |
 | :-: | :--------- | :--------- | :--------- |
 | 1 | age | Age | in years |
 | 2 | sex | Sex | 0 = female, 1 = male |
-| 3 | cp | Chest pain type | 1 = typical angina, 2 = atypical angina, 3 = non-anginal pain, 4 = asymptomatic |
+| 3 | cp | Chest pain type | 1 = typical, 2 = atypical, 3 = non-anginal, 4 = asymptomatic |
 | 4 | restbp | Resting blood pressure | in mm Hg |
 | 5 | chol | Serum cholesterol | in mg/dl |
 | 6 | fbs | Fasting blood sugar > 120 mg/dl | 0 = false, 1 = true |
