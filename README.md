@@ -4,8 +4,6 @@
 
 <br>
 
-## Introduction
-
 Heart disease, also known as cardiovascular disease, is a disorder characterized by clogged blood vessels that can result in a heart attack[^1]. According to the World Health Organization, heart disease has been the greatest killer among diseases worldwide over the past 20 years[^2]. Every year, heart diseases have caused an estimated 17.9 million mortalities globally. It now accounts for 16% of total mortalities from all causes[^3]. 
 
 Hence, it is essential to be knowledgeable about the symptoms and factors of heart disease as it is a major public health concern. By analyzing the healthcare data, we can gain profound insights into the disease. We can also use predictive modeling to predict the diagnosis, which may assist in the early detection and prevention of heart disease.
@@ -17,7 +15,7 @@ Risk factors of heart disease fall into three main categories[^4]:
 
 <br>
 
-## Data Dictionary
+# Data Dictionary
 
 The dataset used in this study is the [Statlog (Heart) dataset from UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Statlog+%28Heart%29). The following table describes the 14 variables from the dataset.
 
@@ -46,11 +44,15 @@ The variables include:
 
 <br>
 
-## Exploratory Data Analysis 
+# Exploratory Data Analysis 
 
 Throughout this section, different methods are applied to investigate and reveal the relationships between variables.
 
-#### Which gender has a higher risk of heart disease?
+<br>
+
+### Which gender has a higher risk of heart disease?
+
+<br>
 
 ![BAR : GENDER x TARGET](/img/bar.png)
 
@@ -68,7 +70,7 @@ A study in 2010 has revealed that cardiovascular disease develops 7 to 10 years 
 
 <br>
 
-#### What is the relationship between heart rate and age?
+### What is the relationship between heart rate and age?
 
 ![SCATTER : HEART RATE x AGE](/img/scatter1.png)
 
@@ -84,7 +86,7 @@ The graph for those with heart disease has a more irregular pattern. It also sho
 
 <br>
 
-#### Which type of chest pain is the most prevalent in individuals with heart disease?
+### Which type of chest pain is the most prevalent in individuals with heart disease?
 
 The type of chest pain contains 4 different levels[^9]:
 1. Typical angina - caused by physical exertion or emotional stress
@@ -110,7 +112,7 @@ In fact, it was proven that exercise-induced angina is a common complaint among 
 
 <br>
 
-#### Can thallium stress tests detect heart disease?
+### Can thallium stress tests detect heart disease?
 
 A thallium stress test is a nuclear imaging test that evaluates blood flows in the heart. The heart is photographed while
 doing exercise and at rest[^12]. It can provide diagnostic information about patients with known or suspected cardiovascular disease[^13].
@@ -130,7 +132,7 @@ should not be underestimated even with normal stress test results.
 
 <br>
 
-#### How does the ST segment differ between individuals with and without heart disease?
+### How does the ST segment differ between individuals with and without heart disease?
 
 Electrocardiogram (ECG) measures electrical activities of the heart. The ST segment reflects the period of zero potential between ventricular depolarization and repolarization. The ST segment can be displaced upwards (elevation) or downwards (depression)[^14].
 
@@ -152,7 +154,7 @@ On the flip side, those with heart disease are more likely to exhibit a flat ST 
 
 <br>
 
-## Predictive Modeling
+# Predictive Modeling
 
 A decision tree is a predictive model which can be used to represent both classifiers and regression models. In this study, classification trees are used to classify the diagnosis of heart disease into a predefined set of classes (absent/present) based on their attribute values (e.g., age, gender, chest pain type, etc)[^18].
 
@@ -166,7 +168,7 @@ The summary shows that the tree has **13 terminal nodes** and a **misclassificat
 
 <br>
 
-#### Pruning
+### Pruning
 
 Cross-validation and cost complexity pruning is utilized to determine the optimal level of tree complexity. The misclassification error rate is used as the cost function to guide the pruning process[^18].
 
@@ -185,7 +187,7 @@ predictors have been used to construct the pruned tree. The pruned tree has a **
 
 <br>
 
-#### Comparison of Pruned and Unpruned Classification Trees
+### Comparison of Pruned and Unpruned Classification Trees
 
 | | Unpruned | Pruned |
 | :---------| :-: | :-: |
@@ -200,7 +202,7 @@ The **diagnostic accuracy has increased** around 1.5% after pruning. However, th
 
 <br>
 
-## Conclusion
+# Conclusion
 
 In conclusion, men have higher odds of developing heart disease than women. Nevertheless, women should not take this lightly as heart disease remains the biggest cause of death among women. We also found out that younger people with heart disease have abnormally low maximum heart rates, whereas the heart rate of those without heart disease decreases steadily with age.
 
@@ -212,7 +214,7 @@ Many factors play a part in our heart health, but not all of them can be altered
 
 <br>
 
-## References
+# References
 
 [^1]: Cohn DP, Cohn DJ. Fighting the Silent Killer: How Men and Women Can Prevent and Cope with Heart Disease Today. 0th ed. A K Peters/CRC Press; 1993. doi:10.1201/9781439864753
 [^2]: WHO reveals leading causes of death and disability worldwide: 2000-2019. December 2020. https://www.who.int/news/item/09-12-2020-who-reveals-leading-causes-of-death-and-disability-worldwide-2000-2019.
