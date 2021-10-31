@@ -1,5 +1,23 @@
 # Heart Disease 
 
+## Contents
+
+* [Data Dictionary](#data-dictionary)
+* [Exploratory Data Analysis](#exploratory-data-analysis)
+- [Gender](#which-gender-has-a-higher-risk-of-heart-disease)
+- [Heart Rate](#heart-rate)
+- [Chest Pain](#which-type-of-chest-pain-is-the-most-prevalent-in-individuals-with-heart-disease)
+- [Thallium Stress Tests](#can-thallium-stress-tests-detect-heart-disease)
+- [ST segment](#how-does-the-st-segment-differ-between-individuals-with-and-without-heart-disease)
+* [Predictive Modeling](#predictive-modeling)
+- [Classification Tree](#classification-tree)
+- [Pruning](#pruning)
+- [Comparison of Pruned and Unpruned Classification Trees](##comparison-of-pruned-and-unpruned-classification-trees)
+* [Conclusion](#conclusion)
+* [References](#references)
+
+<br>
+
 ![HEART](/img/heart.png)
 
 <br>
@@ -15,7 +33,7 @@ Risk factors of heart disease fall into three main categories[^4]:
 
 <br>
 
-# Data Dictionary
+## Data Dictionary
 
 The dataset used in this study is the [Statlog (Heart) dataset from UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Statlog+%28Heart%29). The following table describes the 14 variables in the dataset.
 
@@ -46,7 +64,7 @@ The variables include:
 
 <br>
 
-# Exploratory Data Analysis 
+## Exploratory Data Analysis 
 
 Throughout this section, different methods are applied to investigate and reveal the relationships between variables.
 
@@ -164,11 +182,13 @@ On the flip side, those with heart disease are more likely to exhibit a flat ST 
 
 <br>
 
-# Predictive Modeling
+## Predictive Modeling
 
 A decision tree is a predictive model which can be used to represent both classifiers and regression models. In this study, classification trees are used to classify the diagnosis of heart disease into a predefined set of classes (absent/present) based on their attribute values (e.g., age, gender, chest pain type, etc)[^18].
 
 <br>
+
+### Classification Tree
 
 ![UNPRUNE TREE](/img/unprune.png)
 
@@ -212,7 +232,7 @@ The **diagnostic accuracy has increased** around 1.5% after pruning. However, th
 
 <br>
 
-# Conclusion
+## Conclusion
 
 In conclusion, men have higher odds of developing heart disease than women. Nevertheless, women should not take this lightly as heart disease remains the biggest cause of death among women. We also found out that younger people with heart disease have abnormally low maximum heart rates, whereas the heart rate of those without heart disease decreases steadily with age.
 
@@ -224,7 +244,7 @@ Many factors play a part in our heart health, but not all of them can be altered
 
 <br>
 
-# References
+## References
 
 [^1]: Cohn DP, Cohn DJ. Fighting the Silent Killer: How Men and Women Can Prevent and Cope with Heart Disease Today. 0th ed. A K Peters/CRC Press; 1993. doi:10.1201/9781439864753
 [^2]: WHO reveals leading causes of death and disability worldwide: 2000-2019. December 2020. https://www.who.int/news/item/09-12-2020-who-reveals-leading-causes-of-death-and-disability-worldwide-2000-2019.
