@@ -2,17 +2,18 @@
 
 ## Contents
 
+* [Introduction](#introduction)
 * [Data Dictionary](#data-dictionary)
 * [Exploratory Data Analysis](#exploratory-data-analysis)
-- [Gender](#which-gender-has-a-higher-risk-of-heart-disease)
-- [Heart Rate](#heart-rate)
-- [Chest Pain](#which-type-of-chest-pain-is-the-most-prevalent-in-individuals-with-heart-disease)
-- [Thallium Stress Tests](#can-thallium-stress-tests-detect-heart-disease)
-- [ST segment](#how-does-the-st-segment-differ-between-individuals-with-and-without-heart-disease)
+  - [Gender](#which-gender-has-a-higher-risk-of-heart-disease)
+  - [Heart Rate](#what-is-the-relationship-between-heart-rate-and-age)
+  - [Chest Pain](#which-type-of-chest-pain-is-the-most-prevalent-in-individuals-with-heart-disease)
+  - [Thallium Stress Tests](#can-thallium-stress-tests-detect-heart-disease)
+  - [ST segment](#how-does-the-st-segment-differ-between-individuals-with-and-without-heart-disease)
 * [Predictive Modeling](#predictive-modeling)
-- [Classification Tree](#classification-tree)
-- [Pruning](#pruning)
-- [Comparison of Pruned and Unpruned Classification Trees](##comparison-of-pruned-and-unpruned-classification-trees)
+  - [Classification Tree](#classification-tree)
+  - [Pruning](#pruning)
+  - [Comparison of Pruned and Unpruned Classification Trees](#comparison-of-pruned-and-unpruned-classification-trees)
 * [Conclusion](#conclusion)
 * [References](#references)
 
@@ -21,6 +22,8 @@
 ![HEART](/img/heart.png)
 
 <br>
+
+## Introduction
 
 Heart disease, also known as cardiovascular disease, is a disorder characterized by clogged blood vessels that can result in a heart attack[^1]. According to the World Health Organization, heart disease has been the greatest killer among diseases worldwide over the past 20 years[^2]. Every year, heart diseases have caused an estimated 17.9 million mortalities globally. It now accounts for 16% of total mortalities from all causes[^3]. 
 
