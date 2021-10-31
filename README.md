@@ -40,7 +40,7 @@ The dataset used in this study is the [Statlog (Heart) dataset from UCI Machine 
 
 The variables include:
 - Risk factors - Age, sex, blood pressure, cholesterol, blood sugar
-- Symptoms - Chest pain, exerciseinduced angina
+- Symptoms - Chest pain, exercise-induced angina
 - Test results - Resting electrocardiography, max heart rate, ST depression, ST segment, fluoroscopy, thallium stress test
 - Target variable - Diagnosis of heart disease
 
@@ -50,7 +50,7 @@ The variables include:
 
 Throughout this section, different methods are applied to investigate and reveal the relationships between variables.
 
-### Question 1: Which gender has a higher risk of heart disease?
+#### Question 1: Which gender has a higher risk of heart disease?
 
 ![BAR : GENDER x TARGET](/img/bar.png)
 
@@ -62,13 +62,13 @@ Due to men’s higher absolute risk relative to women, cardiovascular disease ha
 
 ![BOX : GENDER x AGE x TARGET](/img/box.png)
 
-There is an age gap between genders in terms of heart disease diagnosis. The interquartile range for men with heart disease is much larger than their female counterparts. The boxplot for female with heart disease is also heavily left-skewed in comparison with the male’s, indicating that female respondents with heart disease get it later in their life. A study in 2010 has revealed that cardiovascular disease develops 7 to 10 years later in women than in men. In spite of that, it remains the leading cause of mortality in women[^6].
+There is an age gap between genders in terms of heart disease diagnosis. The interquartile range for men with heart disease is much larger than their female counterparts. The boxplot for female with heart disease is also heavily left-skewed in comparison with the male’s, indicating that female respondents with heart disease get it later in their life. 
 
-Heart attack can be more fatal in women. Due to women's smaller body size and blood vessels, blockages of the same size can be more serious. The narrower vessel channel also makes surgery and angioplasty procedures more complicated[^1]. Hence, the risk should not be underestimated due to the false sense of security that females are protected against cardiovascular disease[^6].
+A study in 2010 has revealed that cardiovascular disease develops 7 to 10 years later in women than in men. In spite of that, it remains the leading cause of mortality in women[^6]. Heart attack can be more fatal in women. Due to women's smaller body size and blood vessels, blockages of the same size can be more serious. The narrower vessel channel also makes surgery and angioplasty procedures more complicated[^1]. Hence, the risk should not be underestimated due to the false sense of security that females are protected against cardiovascular disease[^6].
 
 <br>
 
-### Question 2: What is the relationship between heart rate and age?
+#### Question 2: What is the relationship between heart rate and age?
 
 ![SCATTER : HEART RATE x AGE](/img/scatter1.png)
 
@@ -78,13 +78,13 @@ It shows that age and maximum heart rate are inversely related. Many studies hav
 
 ![SCATTER : HEART RATE x AGE x TARGET](/img/scatter2.png)
 
-The graph prior to this shows that the maximum heart rate decreases steadily with age. However, after splitting the graph based on the diagnosis of heart disease, the previous statement no longer holds true for those who suffered from heart disease.
+The graph prior to this shows that the maximum heart rate decreases steadily with age. However, after splitting the graph based on the diagnosis of heart disease, this statement no longer holds true for those who suffered from heart disease.
 
 The graph for those with heart disease has a more irregular pattern. It also shows that those who suffered from heart disease have a lower maximum heart rate at an earlier age, reflecting poor heart functionality. Hence, an abnormally low maximum heart rate may be used as a risk marker for younger people to detect heart disease.
 
 <br>
 
-### Question 3: Which type of chest pain is the most prevalent in individuals with heart disease?
+#### Question 3: Which type of chest pain is the most prevalent in individuals with heart disease?
 
 The type of chest pain contains 4 different levels[^9]:
 1. Typical angina - caused by physical exertion or emotional stress
@@ -93,6 +93,8 @@ The type of chest pain contains 4 different levels[^9]:
 4. Asymptomatic - showing no symptoms or minimal symptoms[^10]
 
 Note: Angina is described as a kind of discomfort caused when the heart doesn’t get enough oxygen-rich blood.
+
+<br>
 
 ![POINT : CHEST PAIN x TARGET](/img/point.png)
 
@@ -108,7 +110,7 @@ In fact, it was proven that exercise-induced angina is a common complaint among 
 
 <br>
 
-### Question 4: Can thallium stress tests detect heart disease?
+#### Question 4: Can thallium stress tests detect heart disease?
 
 A thallium stress test is a nuclear imaging test that evaluates blood flows in the heart. The heart is photographed while
 doing exercise and at rest[^12]. It can provide diagnostic information about patients with known or suspected cardiovascular disease[^13].
@@ -116,6 +118,8 @@ doing exercise and at rest[^12]. It can provide diagnostic information about pat
 Based on the dataset, the test results are categorized as normal, fixed defect and reversible defect. Fixed defects refer
 to abnormalities present on scan both during cardiac stress and at rest. Reversible defects are those that are present on
 the post-stress scan but show improvement in the resting scan[^13].
+
+<br>
 
 ![PIE : THAL x TARGET](/img/pie.png)
 
@@ -126,26 +130,33 @@ should not be underestimated even with normal stress test results.
 
 <br>
 
-### Question 5: How does the ST segment differ between individuals with and without heart disease?
+#### Question 5: How does the ST segment differ between individuals with and without heart disease?
 
 Electrocardiogram (ECG) measures electrical activities of the heart. The ST segment reflects the period of zero potential between ventricular depolarization and repolarization. The ST segment can be displaced upwards (elevation) or downwards (depression)[^14].
 
+ST depression refers to an ECG result in which the trace in the ST segment is unusually low[^15]. The acceptable level of ST segment depression is less than 0.5mm, while reading that is more than 0.5mm is considered pathological[^16]. 
+
+<br>
+
 ![DENSITY : ST DEPRESSION x TARGET](/img/density.png)
 
-ST depression refers to an ECG result in which the trace in the ST segment is unusually low[^15]. The acceptable level of
-ST segment depression is less than 0.5mm, while reading that is more than 0.5mm is considered pathological[^16]. The graph above supports that higher ST depression is related to the presence of heart disease. It can be seen that the dashed line that represents the median is higher for patients with heart disease than non-diseased patients.
+The graph supports that higher ST depression is related to the presence of heart disease. It can be seen that the dashed line that represents the median is higher for patients with heart disease than non-diseased patients.
 
 <br>
 
 ![LINE : SLOPE x TARGET](/img/line.png)
 
-Besides the reading of ST depression, the characteristic of ST segment is also important. As shown above, respondents who are not diagnosed with heart disease have the highest rate of showcasing an upsloping ST segment during exercise, followed by a flat one. On the flip side, those with heart disease are more likely to exhibit a flat ST segment. Previous studies have proved that the normal ST segment during exercise has an upward curve. Flat or downsloping ST segments might indicate possible abnormalities[^17].
+Besides the reading of ST depression, the characteristic of ST segment is also important. As shown above, respondents who are not diagnosed with heart disease have the highest rate of showcasing an upsloping ST segment during exercise, followed by a flat one. 
+
+On the flip side, those with heart disease are more likely to exhibit a flat ST segment. Previous studies have proved that the normal ST segment during exercise has an upward curve. Flat or downsloping ST segments might indicate possible abnormalities[^17].
 
 <br>
 
 ## Predictive Modeling
 
 A decision tree is a predictive model which can be used to represent both classifiers and regression models. In this study, classification trees are used to classify the diagnosis of heart disease into a predefined set of classes (absent/present) based on their attribute values (e.g., age, gender, chest pain type, etc)[^18].
+
+<br>
 
 ![UNPRUNE TREE](/img/unprune.png)
 
@@ -161,7 +172,7 @@ Cross-validation and cost complexity pruning is utilized to determine the optima
 
 ![CROSS VALIDATION](/img/cv.png)
 
-The cross-validation of terminal nodes amount (size) and the corresponding error rate (dev) shows that a tree with **7 terminal nodes** will result in the lowest misclassification error rate.
+The cross-validation of terminal nodes amount and the corresponding error rate shows that a tree with **7 terminal nodes** will result in the lowest misclassification error rate.
 
 <br>
 
