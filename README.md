@@ -1,4 +1,4 @@
-# Heart Disease Dataset 
+# Heart Disease 
 
 ![HEART](/img/heart.png)
 
@@ -50,7 +50,7 @@ The variables include:
 
 Throughout this section, different methods are applied to investigate and reveal the relationships between variables.
 
-#### Question 1: Which gender has a higher risk of heart disease?
+#### Which gender has a higher risk of heart disease?
 
 ![BAR : GENDER x TARGET](/img/bar.png)
 
@@ -68,7 +68,7 @@ A study in 2010 has revealed that cardiovascular disease develops 7 to 10 years 
 
 <br>
 
-#### Question 2: What is the relationship between heart rate and age?
+#### What is the relationship between heart rate and age?
 
 ![SCATTER : HEART RATE x AGE](/img/scatter1.png)
 
@@ -84,7 +84,7 @@ The graph for those with heart disease has a more irregular pattern. It also sho
 
 <br>
 
-#### Question 3: Which type of chest pain is the most prevalent in individuals with heart disease?
+#### Which type of chest pain is the most prevalent in individuals with heart disease?
 
 The type of chest pain contains 4 different levels[^9]:
 1. Typical angina - caused by physical exertion or emotional stress
@@ -110,7 +110,7 @@ In fact, it was proven that exercise-induced angina is a common complaint among 
 
 <br>
 
-#### Question 4: Can thallium stress tests detect heart disease?
+#### Can thallium stress tests detect heart disease?
 
 A thallium stress test is a nuclear imaging test that evaluates blood flows in the heart. The heart is photographed while
 doing exercise and at rest[^12]. It can provide diagnostic information about patients with known or suspected cardiovascular disease[^13].
@@ -130,7 +130,7 @@ should not be underestimated even with normal stress test results.
 
 <br>
 
-#### Question 5: How does the ST segment differ between individuals with and without heart disease?
+#### How does the ST segment differ between individuals with and without heart disease?
 
 Electrocardiogram (ECG) measures electrical activities of the heart. The ST segment reflects the period of zero potential between ventricular depolarization and repolarization. The ST segment can be displaced upwards (elevation) or downwards (depression)[^14].
 
