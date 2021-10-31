@@ -72,6 +72,8 @@ A study in 2010 has revealed that cardiovascular disease develops 7 to 10 years 
 
 ### What is the relationship between heart rate and age?
 
+<br>
+
 ![SCATTER : HEART RATE x AGE](/img/scatter1.png)
 
 It shows that age and maximum heart rate are inversely related. Many studies have shown that the maximum heart rate declines with age[^7]. The major reason behind the age-related decrease is due to a drop in the intrinsic heart rate. This implies that the heart’s own pacemaker (a cluster of cells responsible for initiating each heartbeat) has lost its functional efficiency[^8].
@@ -87,6 +89,8 @@ The graph for those with heart disease has a more irregular pattern. It also sho
 <br>
 
 ### Which type of chest pain is the most prevalent in individuals with heart disease?
+
+<br>
 
 The type of chest pain contains 4 different levels[^9]:
 1. Typical angina - caused by physical exertion or emotional stress
@@ -114,6 +118,8 @@ In fact, it was proven that exercise-induced angina is a common complaint among 
 
 ### Can thallium stress tests detect heart disease?
 
+<br>
+
 A thallium stress test is a nuclear imaging test that evaluates blood flows in the heart. The heart is photographed while
 doing exercise and at rest[^12]. It can provide diagnostic information about patients with known or suspected cardiovascular disease[^13].
 
@@ -133,6 +139,8 @@ should not be underestimated even with normal stress test results.
 <br>
 
 ### How does the ST segment differ between individuals with and without heart disease?
+
+<br>
 
 Electrocardiogram (ECG) measures electrical activities of the heart. The ST segment reflects the period of zero potential between ventricular depolarization and repolarization. The ST segment can be displaced upwards (elevation) or downwards (depression)[^14].
 
