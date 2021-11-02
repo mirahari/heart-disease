@@ -73,7 +73,7 @@ Throughout this section, different methods are applied to investigate and reveal
 
 <br>
 
-### Which gender has a higher risk of heart disease?
+### I. Which gender has a higher risk of heart disease?
 
 <br>
 
@@ -91,9 +91,9 @@ There is an age gap between genders in terms of heart disease diagnosis. The int
 
 A study in 2010 has revealed that cardiovascular disease develops 7 to 10 years later in women than in men. In spite of that, it remains the leading cause of mortality in women[^6]. Heart attack can be more fatal in women. Due to women's smaller body size and blood vessels, blockages of the same size can be more serious. The narrower vessel channel also makes surgery and angioplasty procedures more complicated[^1]. Hence, the risk should not be underestimated due to the false sense of security that females are protected against cardiovascular disease[^6].
 
-<br>
+<br><br>
 
-### What is the relationship between heart rate and age?
+### II. What is the relationship between heart rate and age?
 
 <br>
 
@@ -109,9 +109,9 @@ The graph prior to this shows that the maximum heart rate decreases steadily wit
 
 The graph for those with heart disease has a more irregular pattern. It also shows that those who suffered from heart disease have a lower maximum heart rate at an earlier age, reflecting poor heart functionality. Hence, an abnormally low maximum heart rate may be used as a risk marker for younger people to detect heart disease.
 
-<br>
+<br><br>
 
-### Which type of chest pain is the most prevalent in individuals with heart disease?
+### III. Which type of chest pain is the most prevalent in individuals with heart disease?
 
 <br>
 
@@ -137,9 +137,9 @@ Exercise-induced angina is found to have a higher occurrence in respondents suff
 
 In fact, it was proven that exercise-induced angina is a common complaint among cardiac patients, which can be triggered further when exposed to a cold environment[^11]. Thus, this symptom can be served as an indicator of potential heart disease.
 
-<br>
+<br><br>
 
-### Can thallium stress tests detect heart disease?
+### IV. Can thallium stress tests detect heart disease?
 
 <br>
 
@@ -159,9 +159,9 @@ Almost 80% of respondents without heart disease have normal test results. On the
 Nonetheless, normal results still account for more than a quarter of the respondents with heart disease. Hence, the risk
 should not be underestimated even with normal stress test results.
 
-<br>
+<br><br>
 
-### How does the ST segment differ between individuals with and without heart disease?
+### V. How does the ST segment differ between individuals with and without heart disease?
 
 <br>
 
