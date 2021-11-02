@@ -1,5 +1,3 @@
-# Heart Disease 
-
 ## Contents
 
 * [Introduction](#introduction)
