@@ -262,8 +262,7 @@ Many factors play a part in our heart health, but not all of them can be altered
 [^9]: American Heart Association. Angina(Chest pain). Angina (Chest Pain). July 2015. https://www.heart.org/en/health-topics/heart-attack/angina-chest-pain. Accessed May 30, 2021.
 [^10]: Wong C-K. Recognising ”painless” heart attacks. Heart. 2002;87(1):3-5. doi:10.1136/heart.87.1.3
 [^11]: Brown CF, Oldridge NB. Exercise-induced angina in the cold: Medicine & Science in Sports & Exercise. 1985;17(5):607???612. doi:10.1249/00005768-198510000-00015
-[^12]: Nelson J. Thallium stress test: Purpose, procedure, and risks. Healthline. June 2012. https://www.healthline.
-com/health/thallium-stress-test.
+[^12]: Nelson J. Thallium stress test: Purpose, procedure, and risks. Healthline. June 2012. https://www.healthline.com/health/thallium-stress-test.
 [^13]: Tighe DA, Gentile BA, Chung EK, eds. Pocket Guide to Stress Testing. Second edition. Hoboken, NJ: Wiley; 2020.
 [^14]: Ashley EA, Niebauer J. Cardiology Explained. London: Remedica Medical Education; Publishing; 2004.
 [^15]: Okin PM, Devereux RB, Kors JA, et al. Computerized st depression analysis improves prediction of all-cause and cardiovascular mortality: The strong heart study. Annals of Noninvasive Electrocardiology. 2001;6(2):107-116. doi:10.1111/j.1542-474X.2001.tb00094.x
